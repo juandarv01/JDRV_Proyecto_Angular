@@ -1,0 +1,10 @@
+@import '/src/styles/variables.scss';
+div {
+   background-color: $rausch-color;
+   padding: 5px 0;
+   h2 {
+       color: #fff;
+       margin: 0;
+       text-align: center;
+   }
+}

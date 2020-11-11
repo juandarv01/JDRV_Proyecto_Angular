@@ -1,0 +1,31 @@
+<section>
+    <form class="form" [formGroup]="formGroupRegister">
+        <div class="control-form"> 
+            <label>Nombre:</label>
+            <input formControlName="name" type="text" name="nameText"/>
+        </div>
+        <div class="control-form">
+            <label>Teléfono</label>
+            <input formControlName="phone" type="text" name="phoneText"/>
+        </div>
+        <div class="control-form">
+            <label>Identificación</label>
+            <input formControlName="identify" type="text" name="phoneText"/>
+        </div>
+        <div class="control-form">
+            <label>Correo Electrónico</label>
+            <input  formControlName="email" type="email" name="emailText"/>
+        </div>
+        <span class="error"> {{ getError('email') }} </span>
+
+        <div class="control-form"> 
+            <label>Contraseña</label>
+            <input formControlName="password" type="password" name="passwordText"/>
+        </div>
+        
+        <span class="error"> {{ getError('password') }} </span>
+        <br /><br />
+        <button (click)="register()" [disabled]="formGroupRegister.invalid">Registrarme</button>
+        <button (click)="login()">Ir a Login</button>
+    </form>
+</section>

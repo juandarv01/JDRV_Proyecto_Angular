@@ -1,0 +1,26 @@
+<section>
+    <form class="form" [formGroup]="formGroupBooking">
+        <div class="control-form"> 
+            <label>Fecha Inicial</label>
+            <input formControlName="fechaIni" type="date" name="datetext" />
+        </div>
+        <span class="error"> {{ getError('fechaIni') }} </span>
+        <div class="control-form"> 
+            <label>Fecha Final</label>
+            <input formControlName="fechaFin" type="date" name="datetext" />
+        </div>
+        <span class="error"> {{ getError('fechaFin') }} </span>
+        <div class="control-form">
+            <label>Comentarios</label>
+            <input formControlName="comentarios" type="email" name="emailText" min="20/10/2020"/>
+        </div>
+        <span class="error"> {{ getError('comentarios') }} </span>
+        <br>
+        <br>
+        <button (click)="reservar()" [disabled]="formGroupBooking.invalid">Realizar Reserva</button>
+        <button (click)="home()">Regresar al Home</button>
+        <br>
+        <br>
+        <span class="response"> {{ mensaje }} </span>
+    </form>
+</section>

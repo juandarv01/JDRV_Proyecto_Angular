@@ -1,0 +1,25 @@
+@import '/src/styles/variables.scss';
+
+.card-detail {
+    border: 3px solid $border-color;
+    border-radius: 14px;
+    margin: 0PX 10px;
+    overflow: hidden;
+    img {
+        width: 100%;
+    }
+    p {
+        font-weight: 400;
+        color: $hof-color;
+        margin: 10px 15px;
+    }
+    button{
+        text-decoration: none;
+        border-radius: 20px;
+        background-color:  #FF5A5F;
+        width: 20%;
+        padding: 3px 0;
+        cursor: pointer;
+        border: 2px solid white;
+    }
+}

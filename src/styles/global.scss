@@ -1,0 +1,37 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato';
+}
+
+.form {
+     margin: 0 15px;
+    .control-form {
+        border: 1px solid $border-color;
+        background-color: $bg-color;
+        margin: 10px 0;
+        padding: 3px 4px;
+        border-radius: 3px;
+        label {
+            font-size: 0.9em;
+            color: $hof-color;
+            font-weight: 300;
+        }
+        input {
+            display: block;
+            width: 100%;
+            padding: 3px 0;
+            margin: 0;
+            background-color: transparent;
+            border: 0;
+            outline: none; 
+            color: $hof-color;
+        }
+
+    }
+    .error {
+        font-size: 0.88em;
+        color: red;
+        margin: 0;
+    }
+}

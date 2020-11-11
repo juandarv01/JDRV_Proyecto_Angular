@@ -1,0 +1,13 @@
+@import '/src/styles/variables.scss';
+ 
+.score {
+    display: flex;
+    margin: 5px 15px;
+ 
+.outline-star {
+    color: $babu-color;
+ }
+.fill-star i{
+    color: $babu-color;
+ }
+}
